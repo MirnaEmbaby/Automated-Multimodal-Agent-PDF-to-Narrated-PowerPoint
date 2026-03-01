@@ -1,8 +1,17 @@
 {
-    "chat.tools.terminal.autoApprove": {
-        "/^cd \"d:\\\\Automated-Multimodal-Agent-PDF-to-Narrated-PowerPoint\\\\Automated Multimodal Agent PDF to Narrated PowerPoint\\\\document_understanding_agent\"; \\.\\\\run_gui\\.ps1$/": {
-            "approve": true,
-            "matchCommandLine": true
-        }
+  "chat.tools.terminal.autoApprove": {
+    "/^cd \"d:\\\\Automated-Multimodal-Agent-PDF-to-Narrated-PowerPoint\\\\Automated Multimodal Agent PDF to Narrated PowerPoint\\\\document_understanding_agent\"; \\.\\\\run_gui\\.ps1$/": {
+      "approve": true,
+      "matchCommandLine": true
     }
+  },
+  "task.allowAutomaticTasks": true,
+  "debug.openDebug": "neverOpen",
+  "terminal.integrated.inheritEnv": false,
+  "tasks": {
+    "label": "lint on open",
+    "type": "shell",
+    "command": "npm run lint",
+    "runOn": "folderOpen"
+  }
 }
